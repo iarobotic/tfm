@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot name="quadrotor" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="world_frame" default="world"/>
+  <xacro:arg name="base_link_frame" default="base_link"/>
+
+  <xacro:include filename="$(find my_hector_uavs)/urdf/my_hector_quadrotor_plugins.xacro" />
+
+  <!-- Quadrotor Gazebo Plugins -->
+  <xacro:quadrotor_sensors />
+  <xacro:quadrotor_controller />
+
+  <!-- Quadrotor base link -->
+  <link name="$(arg base_link_frame)">
+      <inertial>
+        <mass value="1.477" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.01152" ixy="0.0" ixz="0.0" iyy="0.01152" iyz="0.0" izz="0.0218" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://my_hector_uavs/meshes/quadrotor_base.dae"/>  <!-- Hector quadrotor CAD -->
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://my_hector_uavs/meshes/quadrotor_base.stl"/>
+        </geometry>
+      </collision>
+   </link>
+
+</robot>
+

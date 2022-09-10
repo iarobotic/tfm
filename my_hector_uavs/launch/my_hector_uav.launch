@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">  <!-- Open Gazebo using the empty_world.launch -->
+    <arg name="paused" value="true"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <include file="$(find my_hector_uavs)/launch/my_spawn_simplified_quadrotor.launch"> <!-- Call another launch file with my parameters -->
+    <arg name="name" value="quadrotor" /> <!-- Robot name in Gazebo -->
+    <arg name="tf_prefix" value="" />
+    <arg name="model" value="$(find my_hector_uavs)/urdf/my_simplified_quadrotor.xacro" />
+    <arg name="x" value="0.0" /> <!-- Initial posture (x,y,z,yaw) -->
+    <arg name="y" value="-1.0" />
+    <arg name="z" value="0.3" />
+    <arg name="Y" value="0.0" />
+  </include>
+
+  <arg name="world_frame" default="world"/>
+  <!-- publish state and tf -->
+  <node name="ground_truth_to_tf" pkg="message_to_tf" type="message_to_tf" output="screen">
+    <param name="odometry_topic" value="ground_truth/state" />
+    <param name="frame_id" value="$(arg world_frame)" />
+    <param name="tf_prefix" value=""/>
+  </node>
+
+</launch>

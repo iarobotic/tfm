@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Visualization of the drones and all paths in Rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_hector_uavs)/rviz/my_hector_lf_paths.rviz"/>
+</launch>
