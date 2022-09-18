@@ -1,5 +1,7 @@
 # Edu-dron AirSim version
 Es un proyecto creado para simplificar a los educadores de robótica el uso de AirSim con el simulador de dron.
+Acceso al video introductorio en Youtube : https://www.youtube.com/watch?v=7ywabVjzQF0
+
 
 ### Airsim
 [Airsim](https://github.com/microsoft/AirSim) es un simulador para coches y drones está basado en [Unreal Engine](https://www.unrealengine.com/).
