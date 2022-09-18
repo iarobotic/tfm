@@ -35,10 +35,32 @@ Es software libre y puede usarse sin limitaciones.
 ### Instalación
 Está pensado para ejecutar en Microsoft Windows aunque podrían usarse en otros entornos.
 
-Sigue las instrucciones del 'Manual del profesor EduDron.pdf' y visualiza los pasos en el video de
-Youtube -> LINK.
+Sigue las instrucciones del 'Manual del profesor Edu-Dron.pdf' y visualiza los pasos en el video de
+Youtube.
 
-Clona o descarga este repositorio en un ordenador local.
+
+
+Direcciones de las descargas: 
+1.- Descarga Entornos AirSim: https://github.com/Microsoft/AirSim/releases 
+
+2.- Direcciones descarga AirSim y Requerimientos: 
+
+    Airsim : https://pypi.org/project/airsim/ comando: pip install airsim 
+    
+    Msgpack-rpc-python: https://pypi.org/project/msgpack-rpc-python/ comando : pip install msgpack-rpc-python 
+    
+    Numpy : https://pypi.org/project/numpy/ comando : pip install numpy 
+    
+    Pyaudio https://pypi.org/project/PyAudio/ pip install PyAudio 
+    
+    Opencv-contrib-python https://pypi.org/project/opencv-contrib-python/ pip install opencv-contrib-python
+    
+3.- Instalación python:		https://www.python.org/downloads/windows/
+
+4.- [opcional] Instalación python + visual code: 			https://docs.microsoft.com/es-es/windows/python/beginners
+
+5.- Clona o descarga 'Edu-Dron.zip' de este repositorio en un ordenador local.
+
 
 ### Plantilla Script Python
 
