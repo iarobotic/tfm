@@ -53,8 +53,8 @@ class Dron():
         self.client.moveByVelocityZAsync(vx,vy,self.z,duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
         time.sleep(demora+3)  
 
-    # ir a la derecha durante 3 segundos
-    def derecha(self):
+    # ir a la izquierda durante 3 segundos
+    def izquierda(self):
         duracion = 3
         velocidad = 2
         demora = duracion * velocidad
@@ -63,8 +63,8 @@ class Dron():
         self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
         time.sleep(demora+3)   
 
-    # ir a la izquierda durante 3 segundos
-    def izquierda(self):
+    # ir a la derecha durante 3 segundos
+    def derecha(self):
         duracion = 3
         velocidad = 2
         demora = duracion * velocidad
