@@ -1,6 +1,24 @@
 # Edu-dron AirSim version
 Es un proyecto creado para simplificar a los educadores de robótica el uso de AirSim con el simulador de dron.
-Acceso al video introductorio en Youtube : https://www.youtube.com/watch?v=7ywabVjzQF0
+
+Acceso a videos en Youtube:
+
+ 1.- Introducción: https://www.youtube.com/watch?v=7ywabVjzQF0
+ 
+ 2.- Instalación entornos AirSim : https://youtu.be/k0awHHWqkUo
+ 
+ 3.- Instalación Python : https://youtu.be/aQCRuMWiV_Q
+ 
+ 4.- Instalación AirSim + Requerimientos: https://youtu.be/igjjwGFyvfM
+ 
+ 5.- Instalación Edu-Dron: https://youtu.be/-SPRkelX0rM
+ 
+ 6.- Ejecución entorno Edu-Dron (desde Terminal) : https://youtu.be/pH-IKLbc3-4
+ 
+ 7.- Instalación Visual Studio Code + Python : https://youtu.be/J3JcXuviMUI
+ 
+ 8.- Ejecución Edu-Dron desde Visual Studio Code: https://youtu.be/kHtzcnzvgOw
+
 
 
 ### Airsim
