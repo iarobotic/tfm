@@ -13,7 +13,7 @@ Acceso a videos en Youtube:
  
  5.- Instalación Edu-Dron: https://youtu.be/-SPRkelX0rM
  
- 6.- Ejecución entorno Edu-Dron (desde Terminal) : https://youtu.be/pH-IKLbc3-4
+ 6.- Ejecución entorno Edu-Dron (desde Terminal) : https://youtu.be/JjvKoA8DGao
  
  7.- Instalación Visual Studio Code + Python : https://youtu.be/J3JcXuviMUI
  
