@@ -35,7 +35,7 @@ class Dron():
         demora = duracion * velocidad
         vx = 0
         vy = 0
-        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
+        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora+3)   
     
     # bajar un tramo de 7 unidades
@@ -50,7 +50,7 @@ class Dron():
         demora = duracion * velocidad
         vx = 0
         vy = 0
-        self.client.moveByVelocityZAsync(vx,vy,self.z,duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
+        self.client.moveByVelocityZAsync(vx,vy,self.z,duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora+3)  
 
     # ir a la izquierda durante 3 segundos
@@ -60,7 +60,7 @@ class Dron():
         demora = duracion * velocidad
         vx = 0
         vy = -velocidad
-        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
+        self.client.moveByVelocityZBodyFrameAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora+3)   
 
     # ir a la derecha durante 3 segundos
@@ -70,7 +70,7 @@ class Dron():
         demora = duracion * velocidad
         vx = 0
         vy = velocidad
-        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
+        self.client.moveByVelocityZBodyFrameAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora+3)  
 
     # ir hacia atrás durante 3 segundos
@@ -80,7 +80,7 @@ class Dron():
         demora = duracion * velocidad
         vx = -velocidad
         vy = 0
-        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
+        self.client.moveByVelocityZBodyFrameAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora+3)   
 
     # ir hacia adelante durante 3 segundos      
@@ -90,7 +90,7 @@ class Dron():
         demora = duracion * velocidad
         vx = velocidad
         vy = 0
-        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, 0)).join()
+        self.client.moveByVelocityZBodyFrameAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora+3)   
                            
     # girar el dron sobre su eje 90º a la derecha                           
@@ -103,7 +103,7 @@ class Dron():
         demora = duracion * velocidad
         vx = 0
         vy = 0
-        self.client.moveByVelocityZAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
+        self.client.moveByVelocityZBodyFrameAsync(vx,vy,self.z*(-1),duracion, airsim.DrivetrainType.MaxDegreeOfFreedom, airsim.YawMode(False, self.grados)).join()
         time.sleep(demora)                          
             
     # girar el dron sobre su eje 90º a la izquierda
